@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,48 +18,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="7Vh-cX-FW5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="7Vh-cX-FW5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-6s-Pqc" userLabel="retangulo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-6s-Pqc" userLabel="retangulo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="If5-cG-eSg">
-                                        <rect key="frame" x="67" y="51" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="If5-cG-eSg">
+                                        <rect key="frame" x="67" y="50" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="G18-LK-4gV"/>
+                                            <constraint firstAttribute="width" constant="240" id="ZXA-yd-DLh"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T13-mC-SCO">
-                                        <rect key="frame" x="166" y="197" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.98212605714797974" green="0.95083481073379517" blue="0.47030091285705566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descubra qual a cidade a partir da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb2-gB-Hil">
-                                        <rect key="frame" x="39" y="289" width="297" height="89"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.98212605710000001" green="0.95083481069999998" blue="0.47030091289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc0-wl-VkC" customClass="BotaComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="598" width="359" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc0-wl-VkC" customClass="BotaComBorda" customModule="quizNight" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="599" width="359" height="60"/>
                                         <color key="backgroundColor" red="0.16365572810173035" green="0.28954219818115234" blue="0.34393602609634399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lc0-wl-VkC" secondAttribute="height" multiplier="359:60" id="Sc2-pT-TKO"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="JOGAR">
                                             <color key="titleColor" red="0.98212605710000001" green="0.95083481069999998" blue="0.47030091289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T13-mC-SCO">
+                                        <rect key="frame" x="168.5" y="188" width="37.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.98212605714797974" green="0.95083481073379517" blue="0.47030091285705566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb2-gB-Hil">
+                                        <rect key="frame" x="36" y="283" width="302" height="101"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pb2-gB-Hil" secondAttribute="height" multiplier="302:101" id="JTJ-qK-U58"/>
+                                            <constraint firstAttribute="height" constant="101" id="geX-kc-HG2"/>
+                                            <constraint firstAttribute="width" secondItem="pb2-gB-Hil" secondAttribute="height" multiplier="302:101" id="qD9-3q-TmI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.98212605710000001" green="0.95083481069999998" blue="0.47030091289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79912243150684936" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstItem="If5-cG-eSg" firstAttribute="top" secondItem="gDL-6s-Pqc" secondAttribute="top" constant="50" id="1rw-94-3w8"/>
+                                    <constraint firstAttribute="trailing" secondItem="lc0-wl-VkC" secondAttribute="trailing" constant="8" id="3Z1-Iz-5y1"/>
+                                    <constraint firstItem="lc0-wl-VkC" firstAttribute="leading" secondItem="gDL-6s-Pqc" secondAttribute="leading" constant="8" id="3mC-xe-EM2"/>
+                                    <constraint firstItem="T13-mC-SCO" firstAttribute="top" secondItem="If5-cG-eSg" secondAttribute="bottom" constant="10" id="7fa-xg-g6V"/>
+                                    <constraint firstItem="pb2-gB-Hil" firstAttribute="centerY" secondItem="gDL-6s-Pqc" secondAttribute="centerY" id="DnA-Pn-iwG"/>
+                                    <constraint firstItem="If5-cG-eSg" firstAttribute="centerX" secondItem="gDL-6s-Pqc" secondAttribute="centerX" id="NsO-6t-nX0"/>
+                                    <constraint firstItem="T13-mC-SCO" firstAttribute="centerX" secondItem="gDL-6s-Pqc" secondAttribute="centerX" id="ReZ-LP-qQ5"/>
+                                    <constraint firstItem="pb2-gB-Hil" firstAttribute="centerX" secondItem="gDL-6s-Pqc" secondAttribute="centerX" id="Rti-gM-s3x"/>
+                                    <constraint firstAttribute="bottom" secondItem="lc0-wl-VkC" secondAttribute="bottom" constant="8" id="VFW-gF-CCN"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Vh-cX-FW5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P8B-86-DOX"/>
+                            <constraint firstItem="gDL-6s-Pqc" firstAttribute="centerY" secondItem="7Vh-cX-FW5" secondAttribute="centerY" id="eAr-w3-awY"/>
+                            <constraint firstItem="7Vh-cX-FW5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="j1g-hd-JIr"/>
+                            <constraint firstItem="gDL-6s-Pqc" firstAttribute="width" secondItem="7Vh-cX-FW5" secondAttribute="width" id="nyK-rB-R4k"/>
+                            <constraint firstItem="gDL-6s-Pqc" firstAttribute="centerX" secondItem="7Vh-cX-FW5" secondAttribute="centerX" id="uJb-kp-UBP"/>
+                            <constraint firstItem="gDL-6s-Pqc" firstAttribute="height" secondItem="7Vh-cX-FW5" secondAttribute="height" id="ulq-Xa-xig"/>
+                            <constraint firstItem="7Vh-cX-FW5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="v9d-n9-8Vp"/>
+                            <constraint firstItem="7Vh-cX-FW5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y79-jw-16h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="quizNightLogo" destination="If5-cG-eSg" id="LGj-FF-M1V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
