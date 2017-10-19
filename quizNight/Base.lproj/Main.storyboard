@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HQK-jv-ziz">
-    <device id="ipad9_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,24 +16,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="7Vh-cX-FW5">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-6s-Pqc" userLabel="retangulo">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="If5-cG-eSg">
-                                        <rect key="frame" x="263.5" y="50" width="240" height="128"/>
+                                        <rect key="frame" x="67" y="50" width="240" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="G18-LK-4gV"/>
                                             <constraint firstAttribute="width" constant="240" id="ZXA-yd-DLh"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc0-wl-VkC" customClass="BotaComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="890.5" width="752" height="125.5"/>
+                                        <rect key="frame" x="8" y="599" width="359" height="60"/>
                                         <color key="backgroundColor" red="0.16365572810173035" green="0.28954219818115234" blue="0.34393602609634399" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="lc0-wl-VkC" secondAttribute="height" multiplier="359:60" id="Sc2-pT-TKO"/>
@@ -42,15 +42,18 @@
                                         <state key="normal" title="JOGAR">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="HQK-jv-ziz" kind="show" id="Bu3-yX-ySP"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T13-mC-SCO">
-                                        <rect key="frame" x="365" y="188" width="37.5" height="21"/>
+                                        <rect key="frame" x="168.5" y="188" width="37.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb2-gB-Hil">
-                                        <rect key="frame" x="232.5" y="461.5" width="302" height="101"/>
+                                        <rect key="frame" x="36" y="283" width="302" height="101"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pb2-gB-Hil" secondAttribute="height" multiplier="302:101" id="JTJ-qK-U58"/>
                                             <constraint firstAttribute="height" constant="101" id="geX-kc-HG2"/>
@@ -96,34 +99,34 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
         </scene>
-        <!--View Controller-->
+        <!--Questoes View Controller-->
         <scene sceneID="M7A-8p-WSn">
             <objects>
-                <viewController id="HQK-jv-ziz" sceneMemberID="viewController">
+                <viewController id="HQK-jv-ziz" customClass="QuestoesViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="foc-XT-2Rx">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YwE-Jw-9E0">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5X-wK-u9b" userLabel="retangulo">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="KQp-GN-Qwx">
-                                        <rect key="frame" x="-0.5" y="0.0" width="768" height="491"/>
+                                        <rect key="frame" x="-0.5" y="0.0" width="375" height="366"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a cidade?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV0-h7-lKa">
-                                        <rect key="frame" x="303.5" y="526" width="160" height="30"/>
+                                        <rect key="frame" x="107" y="401" width="160" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vgq-Xf-t3Y">
-                                        <rect key="frame" x="8" y="576" width="752" height="430"/>
+                                        <rect key="frame" x="8" y="451" width="359" height="198"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8B-T7-hCn" customClass="BotaComBorda" customModule="quizNight" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="752" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="42"/>
                                                 <color key="backgroundColor" red="0.16365572810000001" green="0.28954219819999999" blue="0.34393602610000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="FFb-Di-Kxq"/>
@@ -142,9 +145,12 @@
                                                         <include reference="FFb-Di-Kxq"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="botao1Click:" destination="HQK-jv-ziz" eventType="touchUpInside" id="tvS-df-Qir"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB3-bb-bJ5" customClass="BotaComBorda" customModule="quizNight" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="110" width="752" height="100"/>
+                                                <rect key="frame" x="0.0" y="52" width="359" height="42"/>
                                                 <color key="backgroundColor" red="0.16365572810000001" green="0.28954219819999999" blue="0.34393602610000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="sLF-mi-ou7"/>
@@ -163,9 +169,12 @@
                                                         <include reference="sLF-mi-ou7"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="botao2Click:" destination="HQK-jv-ziz" eventType="touchUpInside" id="Vk3-oG-FuJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ci-Yf-7zD" customClass="BotaComBorda" customModule="quizNight" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="220" width="752" height="100"/>
+                                                <rect key="frame" x="0.0" y="104" width="359" height="42"/>
                                                 <color key="backgroundColor" red="0.16365572810000001" green="0.28954219819999999" blue="0.34393602610000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="tAY-3I-ygr"/>
@@ -184,9 +193,12 @@
                                                         <include reference="tAY-3I-ygr"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="botao3Click:" destination="HQK-jv-ziz" eventType="touchUpInside" id="Q8j-uE-Dgb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuc-NB-PxN" customClass="BotaComBorda" customModule="quizNight" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="330" width="752" height="100"/>
+                                                <rect key="frame" x="0.0" y="156" width="359" height="42"/>
                                                 <color key="backgroundColor" red="0.16365572810000001" green="0.28954219819999999" blue="0.34393602610000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="JSc-4j-k43"/>
@@ -205,6 +217,9 @@
                                                         <include reference="JSc-4j-k43"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="botao4Click:" destination="HQK-jv-ziz" eventType="touchUpInside" id="QV5-mH-x6M"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -236,10 +251,109 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rIJ-1A-r8Q"/>
                     </view>
+                    <connections>
+                        <outlet property="dicaImg" destination="KQp-GN-Qwx" id="yvr-3N-zZ3"/>
+                        <outlet property="stackBotoes" destination="vgq-Xf-t3Y" id="V2T-Kb-S3J"/>
+                        <segue destination="asE-Kv-k05" kind="show" identifier="fimDeJogo" id="iEG-G6-2zt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNF-fC-2CL" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875.5395683453238" y="129.49640287769785"/>
+            <point key="canvasLocation" x="1052" y="129"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="LkQ-bX-YYe">
+            <objects>
+                <viewController id="asE-Kv-k05" customClass="GameOverViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NkN-ZO-vUl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Cjz-4T-4qa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23O-Nj-OMA" userLabel="retangulo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fim de Jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwU-aD-1U6">
+                                        <rect key="frame" x="70" y="15" width="234.5" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pontos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f9-GB-4Sh">
+                                        <rect key="frame" x="121" y="433" width="132.5" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bA-So-TQp" customClass="BotaComBorda" customModule="quizNight" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="603" width="359" height="42"/>
+                                        <color key="backgroundColor" red="0.16365572810000001" green="0.28954219819999999" blue="0.34393602610000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Q43-T0-GDm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="JOGAR NOVAMENTE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Q43-T0-GDm"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="Q43-T0-GDm"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="iFn-vp-P6Z" kind="unwind" unwindAction="voltandoPraCaWithSegue:" id="9UW-Px-5Fd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79912243149999995" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pwU-aD-1U6" firstAttribute="top" secondItem="23O-Nj-OMA" secondAttribute="top" constant="15" id="0BS-QR-sgV"/>
+                                    <constraint firstItem="pwU-aD-1U6" firstAttribute="centerX" secondItem="23O-Nj-OMA" secondAttribute="centerX" id="Buw-iw-eRJ"/>
+                                    <constraint firstItem="4f9-GB-4Sh" firstAttribute="centerX" secondItem="23O-Nj-OMA" secondAttribute="centerX" id="J1k-MY-8Ok"/>
+                                    <constraint firstItem="6bA-So-TQp" firstAttribute="leading" secondItem="23O-Nj-OMA" secondAttribute="leading" constant="8" id="fwi-Xu-B0s"/>
+                                    <constraint firstAttribute="bottom" secondItem="6bA-So-TQp" secondAttribute="bottom" constant="22" id="kJd-mt-uxG"/>
+                                    <constraint firstAttribute="trailing" secondItem="6bA-So-TQp" secondAttribute="trailing" constant="8" id="mBK-bs-YWs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9V-ED-Eri">
+                                <rect key="frame" x="0.0" y="214" width="375" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="23O-Nj-OMA" firstAttribute="centerY" secondItem="Cjz-4T-4qa" secondAttribute="centerY" id="EkA-Ew-RvA"/>
+                            <constraint firstItem="4f9-GB-4Sh" firstAttribute="top" secondItem="j9V-ED-Eri" secondAttribute="bottom" constant="-20" id="HGc-WW-OXK"/>
+                            <constraint firstItem="23O-Nj-OMA" firstAttribute="centerX" secondItem="Cjz-4T-4qa" secondAttribute="centerX" id="N74-7f-EPF"/>
+                            <constraint firstItem="Cjz-4T-4qa" firstAttribute="height" secondItem="NkN-ZO-vUl" secondAttribute="height" id="Qb8-fA-CY6"/>
+                            <constraint firstItem="j9V-ED-Eri" firstAttribute="centerY" secondItem="23O-Nj-OMA" secondAttribute="centerY" id="YbK-1O-IUC"/>
+                            <constraint firstItem="j9V-ED-Eri" firstAttribute="leading" secondItem="23O-Nj-OMA" secondAttribute="leading" id="awT-11-FDc"/>
+                            <constraint firstItem="Cjz-4T-4qa" firstAttribute="centerY" secondItem="NkN-ZO-vUl" secondAttribute="centerY" id="hFr-FE-bhu"/>
+                            <constraint firstItem="23O-Nj-OMA" firstAttribute="height" secondItem="Cjz-4T-4qa" secondAttribute="height" id="iFT-e2-YeT"/>
+                            <constraint firstItem="Cjz-4T-4qa" firstAttribute="centerX" secondItem="NkN-ZO-vUl" secondAttribute="centerX" id="qNN-Yd-n4X"/>
+                            <constraint firstItem="Cjz-4T-4qa" firstAttribute="width" secondItem="NkN-ZO-vUl" secondAttribute="width" id="sih-lR-zq5"/>
+                            <constraint firstItem="j9V-ED-Eri" firstAttribute="trailing" secondItem="23O-Nj-OMA" secondAttribute="trailing" id="vjm-nn-F3w"/>
+                            <constraint firstItem="23O-Nj-OMA" firstAttribute="width" secondItem="Cjz-4T-4qa" secondAttribute="width" id="w3b-G3-tKy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZuC-QX-epZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="pontuacaoLabel" destination="j9V-ED-Eri" id="iX4-Xu-N7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Usf-ay-NrK" sceneMemberID="firstResponder"/>
+                <exit id="iFn-vp-P6Z" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8" y="128.18590704647679"/>
         </scene>
     </scenes>
     <resources>

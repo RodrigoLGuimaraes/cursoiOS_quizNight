@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE187F671F99170F002A7A4A /* QuestoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE187F661F99170F002A7A4A /* QuestoesViewController.swift */; };
+		CE187F691F992A66002A7A4A /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE187F681F992A66002A7A4A /* GameOverViewController.swift */; };
 		CE48744A1F8EB4C000C669DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4874491F8EB4C000C669DC /* AppDelegate.swift */; };
 		CE48744C1F8EB4C000C669DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48744B1F8EB4C000C669DC /* ViewController.swift */; };
 		CE48744F1F8EB4C000C669DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE48744D1F8EB4C000C669DC /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE187F661F99170F002A7A4A /* QuestoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestoesViewController.swift; sourceTree = "<group>"; };
+		CE187F681F992A66002A7A4A /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		CE4874461F8EB4C000C669DC /* quizNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4874491F8EB4C000C669DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE48744B1F8EB4C000C669DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				CE4874521F8EB4C000C669DC /* LaunchScreen.storyboard */,
 				CE4874551F8EB4C000C669DC /* Info.plist */,
 				CE48745B1F8EB91A00C669DC /* BotaComBorda.swift */,
+				CE187F661F99170F002A7A4A /* QuestoesViewController.swift */,
+				CE187F681F992A66002A7A4A /* GameOverViewController.swift */,
 			);
 			path = quizNight;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 				CE48745C1F8EB91A00C669DC /* BotaComBorda.swift in Sources */,
 				CE48744C1F8EB4C000C669DC /* ViewController.swift in Sources */,
 				CE48744A1F8EB4C000C669DC /* AppDelegate.swift in Sources */,
+				CE187F671F99170F002A7A4A /* QuestoesViewController.swift in Sources */,
+				CE187F691F992A66002A7A4A /* GameOverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
